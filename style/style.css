@@ -1,12 +1,13 @@
 body{
     padding: 0;
     margin: 0 20px 0 20px;
-    background: rgb(206, 205, 205);
+    background: rgb(255, 255, 255);
     font-family: myriad pro;
     overflow-x: hidden;
 }
 a {
     text-decoration: none;
+    font-family: myriad pro;
 }
 /* Nabar */
 nav{
@@ -255,17 +256,51 @@ li a:hover {
 .resume{
     box-sizing: border-box;
     width: 100%;
-    height: 60vh;
+    height: 100vh;
     background: #00003f;
     padding:  40px;
-    border-radius: 30px 30px 0 0;
+    border-radius: 30px;
+    margin-bottom: 50px;
 }
-.resume > .topic{
+/* Activities */
+.activity {
     width: 100%;
-    height: 10%;
-    text-align: left;
+    height: 70vh;
+    background: #ffff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 50px;
 }
-.resume > .topic > p {
+.activity > .topic {
+    text-align: center;
+    width: 100%;
+    height: 5%;
     font-size: 40px;
-    color: rgb(255, 0, 0);
+    color: #00003f;
 }
+.activity > .main_box {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.activity > .main_box > .box {
+    width: 15%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    color: #00003f;
+
+}
+.activity > .main_box > .box > img {
+    width: 100%;
+}
+/* Contact */
+
