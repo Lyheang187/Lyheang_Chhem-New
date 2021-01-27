@@ -2,12 +2,15 @@ body{
     padding: 0;
     margin: 0 20px 0 20px;
     background: rgb(255, 255, 255);
-    font-family: myriad pro;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     overflow-x: hidden;
 }
 a {
     text-decoration: none;
-    font-family: myriad pro;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
 }
 /* Nabar */
 nav{
@@ -30,7 +33,7 @@ li a{
 	padding: 15px;
 	display: inline-block;
 	color: rgb(0, 0, 0);
-	font-size: 15px;
+	font-size: 20px;
 }
 li a:focus {
     background:rgb(255, 0, 0);
@@ -41,7 +44,7 @@ li a:hover {
     color: white;
 }
 /* .active{
-    background: rgb(255, 0, 0);
+    background: rgb(238, 255, 0);
 } */
 /* Home */
 .home_page{
@@ -278,12 +281,14 @@ li a:hover {
     height: 5%;
     font-size: 40px;
     color: #00003f;
+    margin-bottom: 50px;
 }
 .activity > .main_box {
     width: 100%;
     height: 60%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 .activity > .main_box > .box {
     width: 15%;
@@ -303,4 +308,95 @@ li a:hover {
     width: 100%;
 }
 /* Contact */
+.contact {
+    width: 100%;
+    height: auto;
+    background: #00003f;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
 
+}
+.contact > .topic {
+    width: 100%;
+    height: 10%;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.contact > .map {
+    width: 100%;
+    height: 50vh;
+    background: rgb(0, 255, 255);
+    margin: 20px;
+}
+.contact > .under {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact > .under > form {
+    width: 50%;
+    height: 90vh;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact > .under > form > p {
+    font-size: 30px;
+    
+}
+.contact > .under > form > input, textarea {
+    width: 80%;
+    height: 6vh;
+    margin: 1px 0 1px 0;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.contact > .under > form > textarea {
+    height: 20vh;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.contact > .under > form > .send{
+    width: 20%;
+    background: rgb(0, 98, 255);
+    color: white;
+    border-radius: 5px;
+}
+.contact > .under > .ip {
+    width: 50%;
+    height: 90vh;
+    background: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact > .under > .ip > .text {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.contact > .under > .ip > .text > p,i {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+
+    
+}
+.contact > .under > .ip > .media {
+    margin-top: 0;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact > .under > .ip > .media > a > img {
+    width: 70%;
+    height: 70%;
+}
