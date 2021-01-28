@@ -2,14 +2,12 @@ body{
     padding: 0;
     margin: 0 20px 0 20px;
     background: rgb(255, 255, 255);
-    font-family: 'Lato', sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
     overflow-x: hidden;
 }
 a {
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Hind Madurai', sans-serif;
     font-size: 15px;
 }
 /* Nabar */
@@ -19,6 +17,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 99999;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 30px 0 rgba(255, 255, 255, 0.19);
 }
 ul {
     display: flex;
@@ -32,8 +31,9 @@ li a{
 	text-decoration: none;
 	padding: 15px;
 	display: inline-block;
-	color: rgb(0, 0, 0);
-	font-size: 20px;
+	color: #00003f;
+    font-size: 20px;
+    /* font-weight: bold; */
 }
 li a:focus {
     background:rgb(255, 0, 0);
@@ -48,9 +48,9 @@ li a:hover {
 } */
 /* Home */
 .home_page{
-    background-image: url("../img/home.jpg");
+    background-image: url("../img/home1.jpg");
     width: 100%;
-    height: 91vh;
+    height: 100vh;
     background-size: cover;
     background-position: center 10%;
     margin-top: 0;
@@ -58,6 +58,7 @@ li a:hover {
     text-align: center;
     padding: 1px;
     z-index: -1;
+    padding-top: 5%;
 }
 .home_page > .first {
     font-size: 50px;
@@ -66,7 +67,8 @@ li a:hover {
 }
 .home_page > .second {
     font-size: 70px;
-    color: yellow;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
     margin: 0%;
 }
 .home_page > .third {
@@ -74,22 +76,31 @@ li a:hover {
     font-size: 25px;
     margin-top: 1%;
 }
-.home_page > button{
-    margin: 50px;
-    width: 12%;
-    height: 7vh;
-    background: red;
-    outline: none;
-    border: none;
+.home_page > .btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.home_page > button > a {
+.home_page > .btn > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    font-weight: bold;
-    color: white;   
+    color: white; 
+    margin: 10px;
+    width: 20vh;
+    height: 45px;
+    background: rgb(0, 0, 0);    
+    border-radius: 5px;
+    font-size: 18px;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 30px 0 rgba(255, 255, 255, 0.19);
+
 }
-.home_page > button:hover {
+.home_page > .btn > a:hover{
     background: none;
-    border: 2px solid white;   
+    border: white solid 3px;
 }
 /* About_me */
 .about_me{
@@ -102,15 +113,22 @@ li a:hover {
 .about_me > .img {
     width: 50%;
     padding: 50px;
-    background: yellow;
+    background: rgb(255, 238, 0);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.about_me > .img:hover{
+    background: none;
+}
 .about_me > .img > img {
     width: 85%;
     height: 100%;
-    box-shadow: 10px 10px 5px rgb(128, 128, 128);
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+.about_me > .img > img:hover{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+
 }
 .about_me > .text {
     width: 50%;
@@ -124,23 +142,29 @@ li a:hover {
     color: rgb(30, 8, 100);
 }
 .about_me > .text > .txt > .second {
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(30, 8, 100);
 }
-.about_me > .text > .btn {
-    height: 30%;
-}
-.about_me > .text > .btn > button{
-    width: 23%;
-    height: 7vh;
-    background: red;
-    outline: none;
-    border: none;
-}
-.about_me > .text > .btn > button > a {
+
+.about_me > .text > .btn > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-weight: bold;
-    color: white;  
+    color: #00003f; 
+    margin: 10px;
+    width: 20vh;
+    height: 45px;
+    background: rgb(255, 255, 255); 
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    margin-top: 70%;
+}
+.about_me > .text > .btn > a:hover {
+    background: none;
+    border: none;
+    color: rgb(30, 8, 100);
 }
 /* Course */
 .course{
@@ -150,6 +174,7 @@ li a:hover {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    border-radius: 15px 15px 0 0;
 }
 .course > .topic {
     height: 20%;
@@ -174,7 +199,6 @@ li a:hover {
 }
 .course > .box_main > .box > img {
     width: 100%;
-    height: 60%;
 }
 .course > .box_main > .box > h2 {
     width: 100%;
@@ -182,59 +206,66 @@ li a:hover {
     margin: 10px;
     color: #00003f;
 }
-.course > .box_main > .box > button {
-    margin: 10px;
-    width: 25vh;
-    height: 45px;
-    background: red;
-    border: none;
-    outline: none;
-}
-.course > .box_main > .box > button > a{
+.course > .box_main > .box > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-weight: bold;
     color: white; 
+    margin: 10px;
+    width: 18vh;
+    height: 45px;
+    background: red;
+    border-radius: 5px;
+}
+.course > .box_main > .box > a:hover {
+    background: none;
+    border: rgb(30, 8, 100) solid 3px;
+    color: rgb(30, 8, 100);
+
 }
 /* Teacher */
 .teacher{
     width: 100%;
-    background: #ffffff;
+    background: none;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 .teacher > .topic {
     height: 10%;
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .teacher > .topic > p{
     font-size: 40px;
     color: #00003f;
+    
 }
 .teacher > .box_main {
+    height: 78%;
     width: 100%;
+    background: none;
     display: flex;
-    height: 60%;
     justify-content: space-around;
+    align-items: center;
+    padding: 10px;
 }
 .teacher > .box_main > .box {
-    width: 27%;
+    width: 25%;
+    height: 90%;
     background:  #00003f;
-    flex-wrap: wrap;
-    display: flex;
     text-align: center;
+    color: #ffff;
+    border-radius: 10px;
 }
 .teacher > .box_main > .box > img {
     width: 100%;
-    height: 70%;
-}
-.teacher > .box_main > .box > h2 {
-    width: 100%;
-    height: 20%;
-    margin: 10px;
-    color: #ffffff;
+    border-radius: 10px 10px 0 0;
 }
 .teacher > .btn {
     display: flex;
@@ -243,42 +274,97 @@ li a:hover {
     height: 10%;
     width: 100%;
 }
-.teacher > .btn > button {
-    margin: 10px;
-    width: 25vh;
-    height: 45px;
-    background: red;
-    border: none;
-    outline: none;
-}
-.teacher > .btn > button > a{
+.teacher > .btn > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: #00003f; 
+    margin: 10px;
+    width: 20vh;
+    height: 45px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+.teacher > .btn > a:hover{
+    background: none;
+    border: none;
+    color: rgb(30, 8, 100);
 }
 /* resume */
 .resume{
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
-    background: #00003f;
-    padding:  40px;
-    border-radius: 30px;
+    height: 150vh;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
+.resume > .topic {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background: none;
+    color: #00003f;
+}
+.resume > .box {
+    width: 100%;
+    height: 80%;
+    background: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.resume > .box > .data {
+    width: 40%;
+    height: 40%;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    display: flex;
+
+}
+.resume > .box > .data > .pic {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume > .box > .data > .pic > img {
+    width: 100%;
+}
+.resume > .box > .data > .text {
+    padding: 20px;
+    width: 65%;
+    color: #00003f;
+}
+.resume > .box > .data > .text > p{
+    font-size: 20px;
+}
+
 /* Activities */
 .activity {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     background: #ffff;
     display: flex;
     flex-wrap: wrap;
-    padding: 10px;
-    margin-bottom: 50px;
+    padding: 5px;
+    margin-bottom: 100px;
 }
 .activity > .topic {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 5%;
+    height: 30%;
     font-size: 40px;
     color: #00003f;
     margin-bottom: 50px;
@@ -316,6 +402,7 @@ li a:hover {
     flex-wrap: wrap;
     padding: 10px;
     box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
 
 }
 .contact > .topic {
@@ -364,7 +451,16 @@ li a:hover {
 }
 .contact > .under > form > .send{
     width: 20%;
-    background: rgb(0, 98, 255);
+    background: none;
+    border: none;
+    color: white;
+    background: rgb(0, 17, 255);
+    border-radius: 5px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+.contact > .under > form > .send:hover {
+    background: none;
+    border: white solid 3px;
     color: white;
     border-radius: 5px;
 }
@@ -383,7 +479,7 @@ li a:hover {
 }
 
 .contact > .under > .ip > .text > p,i {
-    font-size: 30px;
+    font-size: 22px;
     color: rgb(255, 255, 255);
 
     
@@ -396,7 +492,19 @@ li a:hover {
     justify-content: space-between;
     align-items: center;
 }
-.contact > .under > .ip > .media > a > img {
-    width: 70%;
-    height: 70%;
+.contact > .under > .ip > .text > .icon > a > i {
+    font-size: 40px;
+    /* display: flex; */
+    margin: 0 10px 0 10px;
+}
+.footer {
+    width: 100%;
+    height: 8vh;
+    color: white;
+    font-size: 17px;
+    background: #00003f;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
