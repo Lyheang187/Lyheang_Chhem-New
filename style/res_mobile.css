@@ -174,9 +174,10 @@
     .contact > .under > form > textarea {
         height: 8vh;
     }
-    .contact > .under > form > .send{
+    .contact > .under > form > a{
         width: 15%;
         font-size: 12px;
+        height: 5vh;
     }
     .contact > .under > .ip > .text > p,i {
         font-size: 15px;

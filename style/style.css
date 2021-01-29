@@ -509,8 +509,11 @@
         height: 20vh;
         font-family: 'Noto Sans JP', sans-serif;
     }
-    .contact > .under > form > .send{
+    .contact > .under > form > a{
         width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: none;
         border: none;
         color: rgb(255, 255, 255);
@@ -518,7 +521,7 @@
         border-radius: 5px;
         font-family: 'Hind Madurai', sans-serif;
     }
-    .contact > .under > form > .send:hover {
+    .contact > .under > form > a:hover {
         background: none;
         border: white solid 1px;
         color: white;

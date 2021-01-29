@@ -248,9 +248,10 @@
         height: 10vh;
         font-family: 'Noto Sans JP', sans-serif;
     }
-    .contact > .under > form > .send{
+    .contact > .under > form > a{
         width: 15%;
-        font-size: 12px;
+        font-size: 15px;
+        height: 7vh;
     }
     .contact > .under > .ip {
         width: 100%;
