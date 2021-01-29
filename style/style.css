@@ -1,510 +1,573 @@
-body{
-    padding: 0;
-    margin: 0 20px 0 20px;
-    background: rgb(255, 255, 255);
-    font-family: 'Hind Madurai', sans-serif;
-    overflow-x: hidden;
-}
-a {
-    text-decoration: none;
-    font-family: 'Hind Madurai', sans-serif;
-    font-size: 15px;
-}
-/* Nabar */
-nav{
-    margin: 0;
-    background: rgb(255, 255, 255);
-    position: sticky;
-    top: 0;
-    z-index: 99999;
-    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 30px 0 rgba(255, 255, 255, 0.19);
-}
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	list-style: none;
-	margin: 0;
-    width: 100%;
-}
-li a{
-	text-decoration: none;
-	padding: 15px;
-	display: inline-block;
-	color: #00003f;
-    font-size: 20px;
-    /* font-weight: bold; */
-}
-li a:focus {
-    background:rgb(255, 0, 0);
-    color: white;
-}
-li a:hover {
-    background: rgb(255, 0, 0);
-    color: white;
-}
-/* .active{
-    background: rgb(238, 255, 0);
-} */
-/* Home */
-.home_page{
-    background-image: url("../img/home1.jpg");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center 10%;
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
-    padding: 1px;
-    z-index: -1;
-    padding-top: 5%;
-}
-.home_page > .first {
-    font-size: 50px;
-    color: white;
-    margin-bottom: 0%;
-}
-.home_page > .second {
-    font-size: 70px;
-    font-weight: bold;
-    color: rgb(255, 0, 0);
-    margin: 0%;
-}
-.home_page > .third {
-    color: white;
-    font-size: 25px;
-    margin-top: 1%;
-}
-.home_page > .btn {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.home_page > .btn > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white; 
-    margin: 10px;
-    width: 20vh;
-    height: 45px;
-    background: rgb(0, 0, 0);    
-    border-radius: 5px;
-    font-size: 18px;
-    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 30px 0 rgba(255, 255, 255, 0.19);
-
-}
-.home_page > .btn > a:hover{
-    background: none;
-    border: white solid 3px;
-}
-/* About_me */
-.about_me{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    background: rgb(255, 255, 255);
-    margin-bottom: 50px;
-}
-.about_me > .img {
-    width: 50%;
-    padding: 50px;
-    background: rgb(255, 238, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.about_me > .img:hover{
-    background: none;
-}
-.about_me > .img > img {
-    width: 85%;
-    height: 100%;
-    box-shadow: 10px 10px 5px rgb(0, 0, 0);
-}
-.about_me > .img > img:hover{
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-
-}
-.about_me > .text {
-    width: 50%;
-    padding: 50px;
-}
-.about_me > .text > .txt {
-    height: 70%;
-}
-.about_me > .text > .txt > .first {
-    font-size: 40px;
-    color: rgb(30, 8, 100);
-}
-.about_me > .text > .txt > .second {
-    font-size: 25px;
-    color: rgb(30, 8, 100);
-}
-
-.about_me > .text > .btn > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: #00003f; 
-    margin: 10px;
-    width: 20vh;
-    height: 45px;
-    background: rgb(255, 255, 255); 
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-    margin-top: 70%;
-}
-.about_me > .text > .btn > a:hover {
-    background: none;
-    border: none;
-    color: rgb(30, 8, 100);
-}
-/* Course */
-.course{
-    width: 100%;
-    background: #00003f;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    border-radius: 15px 15px 0 0;
-}
-.course > .topic {
-    height: 20%;
-    width: 100%;
-    text-align: center;
-}
-.course > .topic > p{
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
-.course > .box_main {
-    width: 100%;
-    display: flex;
-    height: 70%;
-    justify-content: space-around;
-}
-.course > .box_main > .box {
-    width: 27%;
-    background: white;
-    flex-wrap: wrap;
-    display: flex;
-}
-.course > .box_main > .box > img {
-    width: 100%;
-}
-.course > .box_main > .box > h2 {
-    width: 100%;
-    height: 20%;
-    margin: 10px;
-    color: #00003f;
-}
-.course > .box_main > .box > a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: white; 
-    margin: 10px;
-    width: 18vh;
-    height: 45px;
-    background: red;
-    border-radius: 5px;
-}
-.course > .box_main > .box > a:hover {
-    background: none;
-    border: rgb(30, 8, 100) solid 3px;
-    color: rgb(30, 8, 100);
-
-}
-/* Teacher */
-.teacher{
-    width: 100%;
-    background: none;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 5px;
-}
-.teacher > .topic {
-    height: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.teacher > .topic > p{
-    font-size: 40px;
-    color: #00003f;
+@media(max-width:4000px){
+    body{
+        margin: 0 auto;
+        padding: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        background: white;
+        font-family: 'Hind Madurai', sans-serif;
+        overflow-x: hidden;
+    }
+    a {
+        text-decoration: none;
+        font-family: 'Hind Madurai', sans-serif;
+        font-size: 15px;
+    }
+    /* Nabar */
+    nav{
+        margin: 0;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 99999;
+        box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 30px 0 rgba(255, 255, 255, 0.19);
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        width: 100%;
+    }
+    li a{
+        text-decoration: none;
+        padding: 15px;
+        display: inline-block;
+        color: #00003f;
+        font-size: 18px;
+        /* font-weight: bold; */
+    }
+    li a:focus {
+        background:rgb(255, 0, 0);
+        color: white;
+    }
+    li a:hover {
+        background: rgb(255, 0, 0);
+        color: white;
+    }
+    /* .active{
+        background: rgb(238, 255, 0);
+    } */
+    /* Button_Home */
     
-}
-.teacher > .box_main {
-    height: 78%;
-    width: 100%;
-    background: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-}
-.teacher > .box_main > .box {
-    width: 25%;
-    height: 90%;
-    background:  #00003f;
-    text-align: center;
-    color: #ffff;
-    border-radius: 10px;
-}
-.teacher > .box_main > .box > img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-.teacher > .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    width: 100%;
-}
-.teacher > .btn > a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: #00003f; 
-    margin: 10px;
-    width: 20vh;
-    height: 45px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 5px;
-}
-.teacher > .btn > a:hover{
-    background: none;
-    border: none;
-    color: rgb(30, 8, 100);
-}
-/* resume */
-.resume{
-    box-sizing: border-box;
-    width: 100%;
-    height: 150vh;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.resume > .topic {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20%;
-    background: none;
-    color: #00003f;
-}
-.resume > .box {
-    width: 100%;
-    height: 80%;
-    background: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.resume > .box > .data {
-    width: 40%;
-    height: 40%;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-    padding: 20px;
-    display: flex;
-
-}
-.resume > .box > .data > .pic {
-    width: 35%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.resume > .box > .data > .pic > img {
-    width: 100%;
-}
-.resume > .box > .data > .text {
-    padding: 20px;
-    width: 65%;
-    color: #00003f;
-}
-.resume > .box > .data > .text > p{
-    font-size: 20px;
-}
-
-/* Activities */
-.activity {
-    width: 100%;
-    height: 80vh;
-    background: #ffff;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    margin-bottom: 100px;
-}
-.activity > .topic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30%;
-    font-size: 40px;
-    color: #00003f;
-    margin-bottom: 50px;
-}
-.activity > .main_box {
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-.activity > .main_box > .box {
-    width: 15%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
-    color: #00003f;
-
-}
-.activity > .main_box > .box > img {
-    width: 100%;
-}
-/* Contact */
-.contact {
-    width: 100%;
-    height: auto;
-    background: #00003f;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 15px 15px 0 0;
-
-}
-.contact > .topic {
-    width: 100%;
-    height: 10%;
-    font-size: 40px;
-    color: #ffffff;
-    text-align: center;
-}
-.contact > .map {
-    width: 100%;
-    height: 50vh;
-    background: rgb(0, 255, 255);
-    margin: 20px;
-}
-.contact > .under {
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: space-between;
-}
-.contact > .under > form {
-    width: 50%;
-    height: 90vh;
-    color: white;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.contact > .under > form > p {
-    font-size: 30px;
+    /* Home */
+    .home_page{
+        background-image: url("../img/home1.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center 10%;
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 1px;
+        z-index: -1;
+        padding-top: 10%;
+    }
+    .home_page > .first {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 0%;
+    }
+    .home_page > .second {
+        font-size: 70px;
+        font-weight: bold;
+        color: rgb(255, 0, 0);
+        margin: 0%;
+    }
+    .home_page > .third {
+        color: white;
+        font-size: 25px;
+        margin-top: 1%;
+    }
+    .home_page > .btn {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_page > .btn > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white; 
+        margin: 10px;
+        width: 20vh;
+        height: 45px;
+        background: rgb(0, 0, 0);    
+        border-radius: 5px;
+        font-size: 18px;
+        box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 30px 0 rgba(255, 255, 255, 0.19);
     
-}
-.contact > .under > form > input, textarea {
-    width: 80%;
-    height: 6vh;
-    margin: 1px 0 1px 0;
-    padding: 5px;
-    font-size: 20px;
-    border: none;
-    outline: none;
-}
-.contact > .under > form > textarea {
-    height: 20vh;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-.contact > .under > form > .send{
-    width: 20%;
-    background: none;
-    border: none;
-    color: white;
-    background: rgb(0, 17, 255);
-    border-radius: 5px;
-    font-family: 'Hind Madurai', sans-serif;
-}
-.contact > .under > form > .send:hover {
-    background: none;
-    border: white solid 3px;
-    color: white;
-    border-radius: 5px;
-}
-.contact > .under > .ip {
-    width: 50%;
-    height: 90vh;
-    background: none;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.contact > .under > .ip > .text {
-    width: 100%;
-    height: auto;
-    margin-bottom: 0;
-}
-
-.contact > .under > .ip > .text > p,i {
-    font-size: 22px;
-    color: rgb(255, 255, 255);
+    }
+    .home_page > .btn > a:hover{
+        background: none;
+        border: white solid 1px;
+    }
+    /* About_me */
+    .about_me{
+        width: 100%;
+        height: auto;
+        display: flex;
+        background: rgb(255, 255, 255);
+        margin-bottom: 50px;
+        border-radius: 30px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+    .about_me > .img {
+        width: 50%;
+        padding: 50px;
+        background: rgb(255, 238, 0);
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about_me > .img:hover{
+        background: none;
+    }
+    .about_me > .img > img {
+        width: 85%;
+        box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    }
+    .about_me > .img > img:hover{
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    
+    }
+    .about_me > .text {
+        width: 50%;
+        padding: 50px;
+    }
+    .about_me > .text > .txt {
+        height: 70%;
+    }
+    .about_me > .text > .txt > .first {
+        font-size: 40px;
+        color: rgb(30, 8, 100);
+    }
+    .about_me > .text > .txt > .second {
+        font-size: 25px;
+        color: rgb(30, 8, 100);
+    }
+    
+    .about_me > .text > .btn > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #00003f; 
+        margin: 10px;
+        width: 25vh;
+        height: 45px;
+        background: rgb(255, 255, 255); 
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+        margin-top: 70%;
+        margin-bottom: 100px;
+    }
+    .about_me > .text > .btn > a:hover {
+        background: none;
+        border: none;
+        color: rgb(30, 8, 100);
+    }
+    /* Course */
+    .course{
+        width: 100%;
+        height: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+        border-radius: 15px 15px 0 0;
+        padding-bottom: 30px;
+    }
+    .course > .topic {
+        height: 20%;
+        width: 100%;
+        text-align: center;
+    }
+    .course > .topic > p{
+        font-size: 40px;
+        color: #00003f;
+    }
+    .course > .box_main {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+    }
+    .course > .box_main > .box {
+        width: 27%;
+        height: 100vh;
+        background: none;
+        flex-wrap: wrap;
+        display: flex;
+        padding: 10px;
+        padding-bottom: 20px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+    .course > .box_main > .box > img {
+        width: 100%;
+    }
+    .course > .box_main > .box > h2 {
+        width: 100%;
+        height: 20%;
+        margin: 5px;
+        color: #00003f;
+    }
+    .course > .box_main > .box > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: white; 
+        margin: 10px;
+        width: 20vh;
+        height: 45px;
+        background: red;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .course > .box_main > .box:hover {
+        cursor: pointer;
+    }
+    .course > .box_main > .box > a:hover {
+        background: none;
+        border: rgb(30, 8, 100) solid 1px;
+        color: rgb(30, 8, 100);
+    
+    }
+    /* Teacher */
+    .teacher{
+        width: 100%;
+        background: none;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        background: rgb(255, 255, 255);
+        border-radius: 30px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+    .teacher > .topic {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:flex-start;
+    }
+    .teacher > .topic > p{
+        font-size: 40px;
+        color: #00003f;
+        
+    }
+    .teacher > .box_main {
+        height: 80%;
+        width: 100%;
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        box-sizing: border-box;
+        background: none;
+        flex-wrap: wrap;
+    }
+    .teacher > .box_main > .box {
+        text-align: center;
+        height: 65vh;
+        width: 20%;
+        background: #00003f;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+    .teacher > .box_main > .box > .img {
+        width: 100%;
+        height: 60%;
+        background: none;
+    }
+    .teacher > .box_main > .box > .img > img {
+        width: 100%;
+        height: auto;
+    }
+    .teacher > .box_main > .box > .txt {
+        width: 100%;
+        height: auto;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    .teacher > .box_main > .box > .txt > h2 {
+        font-size: 19px;
+    }
+    .teacher > .btn {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 10%;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .teacher > .btn > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: #00003f; 
+        margin: 10px;
+        width: 20vh;
+        height: 45px;
+        background: rgb(255, 255, 255);
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 5px;
+    }
+    .teacher > .btn > a:hover{
+        background: none;
+        border: none;
+        color: rgb(30, 8, 100);
+    }
+    /* resume */
+    .resume{
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .resume > .topic {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+        background: none;
+        color: #00003f;
+    }
+    .resume > .box {
+        width: 100%;
+        height: auto;
+        background: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .resume > .box:hover {
+        cursor: pointer;
+    }
+    .resume > .box > .data {
+        width: 40%;
+        height: 40%;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+        padding: 20px;
+        display: flex;
+        margin-bottom: 30px;
+        padding-top: 0px;
+    
+    }
+    .resume > .box > .data > .pic {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resume > .box > .data > .pic > img {
+        width: 100%;
+    }
+    .resume > .box > .data > .text {
+        padding: 20px;
+        width: 65%;
+        color: #00003f;
+    }
+    .resume > .box > .data > .text > p{
+        font-size: 20px;
+    }
+    
+    /* Activities */
+    .activity {
+        width: 100%;
+        height: auto;
+        background: #ffff;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+    }
+    .activity > .topic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+        font-size: 40px;
+        color: #00003f;
+        margin-bottom: 50px;
+    }
+    .activity > .main_box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    .activity > .main_box > .box {
+        width: 15%;
+        height: auto;
+        background: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+        color: #00003f;
 
     
-}
-.contact > .under > .ip > .media {
-    margin-top: 0;
-    width: 50%;
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contact > .under > .ip > .text > .icon > a > i {
-    font-size: 40px;
-    /* display: flex; */
-    margin: 0 10px 0 10px;
-}
-.footer {
-    width: 100%;
-    height: 8vh;
-    color: white;
-    font-size: 17px;
-    background: #00003f;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    }
+    .activity > .main_box > .box > img {
+        width: 100%;
+    }
+    .activity > .main_box > .box:hover {
+        cursor: pointer;
+    }
+    /* Contact */
+    .contact {
+        width: 100%;
+        height: auto;
+        background: #00003f;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 15px 15px 0 0;
+    
+    }
+    .contact > .topic {
+        width: 100%;
+        height: 10%;
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .contact > .map {
+        width: 100%;
+        height: 50vh;
+        background: rgb(0, 255, 255);
+        margin: 20px;
+    }
+    .contact > .under {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact > .under > form {
+        width: 50%;
+        height: 90vh;
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact > .under > form > p {
+        font-size: 30px;
+        
+    }
+    .contact > .under > form > input, textarea {
+        width: 80%;
+        height: 6vh;
+        margin: 1px 0 1px 0;
+        padding: 5px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+    }
+    .contact > .under > form > textarea {
+        height: 20vh;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    .contact > .under > form > .send{
+        width: 20%;
+        background: none;
+        border: none;
+        color: rgb(0, 0, 0);
+        background: rgb(238, 255, 0);
+        border-radius: 5px;
+        font-family: 'Hind Madurai', sans-serif;
+    }
+    .contact > .under > form > .send:hover {
+        background: none;
+        border: white solid 1px;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact > .under > .ip {
+        width: 50%;
+        height: 90vh;
+        background: none;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact > .under > .ip > .text {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+    
+    .contact > .under > .ip > .text > p,i {
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+    
+        
+    }
+    .contact > .under > .ip > .media {
+        margin-top: 0;
+        width: 50%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact > .under > .ip > .text > .icon > a > i {
+        font-size: 40px;
+        margin: 0 10px 0 10px;
+    }
+    .footer {
+        width: 100%;
+        height: 8vh;
+        color: white;
+        font-size: 17px;
+        background: #00003f;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 30px 30px;
+    }
+    
 }

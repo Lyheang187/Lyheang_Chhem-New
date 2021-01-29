@@ -1,0 +1,33 @@
+@media(max-width:640px){
+    body {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    /* Navbar */
+    li a {
+        padding: 0px;
+        font-size: 5px;
+    }
+    /* Home */
+    .home_page > .first {
+        font-size: 40px;
+    }
+    .home_page > .second {
+        font-size: 50px;
+    }
+    .home_page > .third {
+        font-size: 20px;
+    }
+    .home_page > .btn {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home_page > .btn > a {
+        width: 17vh;
+        height: 30px;
+        font-size: 14px;
+    }
+}

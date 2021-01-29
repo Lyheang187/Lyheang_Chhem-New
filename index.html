@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyheang site</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/res_tablet.css">
     <link rel="stylesheet" href="amination/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
@@ -19,10 +20,11 @@
             <li class="hvr-grow "><a href="#p02"> ABOUT ME </a></li>
             <li class="hvr-grow "><a href="#p03"> TRAINING </a></li>
             <li class="hvr-grow "><a href="#p04"> RESUME </a></li>
-            <li class="hvr-grow "><a href="#p05"> ACTIVITY </a></li>
-            <li class="hvr-grow "><a href="#p06"> CONTACT ME </a></li>
+            <!-- <li class="hvr-grow "><a href="#p05"> ACTIVITY </a></li> -->
+            <li class="hvr-grow "><a href="#p06"> CONTACT </a></li>
         </ul>
     </nav>
+    
     <!-- Home page -->
     <div class="home_page" id="p01">
         <p class="first ">WELCOME TO</p>
@@ -70,7 +72,7 @@
             </div>
             <div class="box">
                 <img src="img/c3.jpg" alt="">
-                <h2>I also learn the design subject and work office.</h2>
+                <h2>I also learn the design subject, work office (Adobe and Microsft) .</h2>
                 <a href="https://join.shawacademy.com/" target="blank">VIEW DETAIL</a>
             </div>
         </div>
@@ -82,16 +84,36 @@
         </div>
         <div class="box_main">
             <div class="box">
-                <img src="img/t1.jpg" alt="">
-                <h2 class="hvr-grow">SOKHOM HEAN <br>English trainer</h2>
+                <div class="img">
+                    <img src="img/t3.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2 class="hvr-grow">RONAN OGOR <br>Code trainer</h2>
+                </div>
             </div>
             <div class="box">
-                <img src="img/t2.jpg" alt="">
-                <h2 class="hvr-grow">RADY Y <br>Technical trainer</h2>
+                <div class="img">
+                    <img src="img/t1.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2 class="hvr-grow">RADY Y <br>CODE trainer</h2>
+                </div>
             </div>
             <div class="box">
-                <img src="img/t3.jpg" alt="">
-                <h2 class="hvr-grow">TANGHUOT TENG <br>Soft skill trainer</h2>
+                <div class="img">
+                    <img src="img/t2.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2 class="hvr-grow">SOKHOM HEAN <br>English trainer</h2>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <img src="img/t4.jpg" alt="">
+                </div>
+                <div class="txt">
+                    <h2 class="hvr-grow">TANGHUOT TENG <br>Soft skill trainer</h2>
+                </div>
             </div>
         </div>
         <div class="btn">
@@ -109,7 +131,9 @@
                     <img src="img/a1.png" alt="">
                 </div>
                 <div class="text">
-                    <h1 class="hvr-underline-from-center">My data</h1>
+                    <div class="head">
+                        <h1 class="hvr-underline-from-center">My data</h1>
+                    </div>
                     <p>
                         My full name is Lyheang Chhem. I was born 2001 in Siem Reap Province.
                         I have left my hometown for 2year to study in PNC at Phnom Penh and my 
@@ -122,7 +146,9 @@
                     <img src="img/a2.png" alt="">
                 </div>
                 <div class="text">
-                    <h1 class="hvr-underline-from-center">Education</h1>
+                    <div class="head">
+                        <h1 class="hvr-underline-from-center">Education</h1>
+                    </div>
                     <p>
                         I finished 28 January Hight School in 2019 at my home town.
                         After that I got a scholarship to learn at Phnom Penh in 2019 from PNC School.
@@ -135,7 +161,9 @@
                     <img src="img/a3.png" alt="">
                 </div>
                 <div class="text">
-                    <h1 class="hvr-underline-from-center">Experience</h1>
+                    <div class="head">
+                        <h1 class="hvr-underline-from-center">Experience</h1>
+                    </div>
                     <p>
                         In 2016 to 2019, I was a worker in a printing house. I work as
                         a seller, and deliver to costumer. In 2020, while I was studing IT
@@ -148,10 +176,12 @@
                     <img src="img/a4.png" alt="">
                 </div>
                 <div class="text">
-                    <h1 class="hvr-underline-from-center">My favor</h1>
+                    <div class="head">
+                        <h1 class="hvr-underline-from-center">My fav</h1>
+                    </div>
                     <p>
                         In my free time with work to do, I like making fun. I play games, watch video and play social medias. 30% of my free
-                        time, I like editing and drawing the picture. 
+                        time, I like editing and drawing the picture. I also like cooking too.
                     </p>
                 </div>
             </div>
@@ -197,11 +227,11 @@
                 <input type="email" placeholder="Email">
                 <input type="tel" placeholder="Phone number">
                 <textarea placeholder="Message" id="" cols="30" rows="10"></textarea>
-                <input class="send hvr-shrink" type="submit" value="SEND">
+                <input class="send" type="submit" value="SEND">
             </form>
             <div class="ip">
                 <div class="text">
-                    <p><i class="fa fa-map-pin hvr-pulse-grow"></i>     Address <br>BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh</p>
+                    <p><i class="fa fa-map-pin hvr-pulse-grow"></i>     Address <br>BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371,<br> Phnom Penh</p>
                     <p><i class="fa fa-id-badge hvr-pulse-grow"></i>     Phone <br>011 121 314 / 096 979 899 100</p>
                     <p><i class="fa fa-envelope hvr-pulse-grow"></i>     Email <br>lyheang.chhem@gmail.com</p>
                     <p>Social media</p>
