@@ -1,0 +1,190 @@
+@media(max-width:650px){
+    body {
+        margin-left: 7px;
+        margin-right: 7px;
+        overflow-x: hidden;
+    }
+    /* Navbar */
+    li a {
+        padding: 8px;
+        font-size: 13px;
+    }
+    /* Home */
+    .home_page > .first {
+        font-size: 28px;
+    }
+    .home_page > .second {
+        font-size: 33px;
+    }
+    .home_page > .third {
+        font-size: 16px;
+    }
+    .home_page > .btn > a {
+        width: 15vh;
+        height: 25px;
+        font-size: 12px;
+    }
+    /* about_me */
+    .about_me > .img {
+        border-radius: 20px 20px 0 0;
+    }
+    .about_me > .text {
+        text-align: center;
+        padding: 3px;
+        width: 100%;
+        height: auto;
+    }
+    .about_me > .text > .txt > .first {
+        font-size: 22px;
+        margin: 13px;
+    }
+    .about_me > .text > .txt > .second {
+        font-size: 17px;
+        text-align: justify;
+        padding: 15px;
+    }
+    .about_me > .text > .btn > a {
+        font-size: 12px;
+        width: 20vh;
+        height: 30px;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+    /* Course */
+    .course{
+        margin-bottom: 0px;
+        
+    }
+    .course > .topic {
+        height: 5%;
+    }
+    .course >  .topic > p{
+        font-size: 22px;
+    }
+    .course > .box_main > .box {
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 10px;
+        width: 95%;
+    }
+    .course > .box_main > .box > h2 {
+        font-size: 15px;
+        margin: 3px;
+    }
+    .course > .box_main > .box > a {
+        font-size: 10px;
+        margin: 8px;
+        width: 13vh;
+        height: 25px;
+    }
+    /* Teacher */
+    .teacher > .topic {
+        height: 5%;
+    }
+    .teacher > .topic > p {
+        font-size: 22px;
+    }
+    .teacher > .box_main > .box {
+        width: 95%;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .teacher > .box_main > .box > .txt > h2 {
+        font-size: 14px;
+    }
+    .teacher > .btn {
+        height: 8%;
+    }
+    .teacher > .btn > a {
+        width: 17vh;
+        height: 25px;
+        font-size: 12px;
+    }
+    /* Resume */
+    .resume{
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    .resume > .topic {
+        font-size: 22px;
+        height: 5%;
+    }
+    .resume > .box > .data {
+        width: 95%;
+        height: auto;
+        padding: 5px;
+        padding-top: 10px;
+        margin-top: 10px;
+        
+    }
+    .resume > .box > .data > .pic {
+        width: 40%;
+        height: 10%;
+        margin-bottom: 40px;
+    }
+    .resume > .box > .data > .text {
+        margin-bottom: 0;
+        height: auto;
+    }    
+    .resume > .box > .data > .text > .head > h1 {
+        font-size: 18px;
+    }
+    .resume > .box > .data > .text > p {
+        font-size: 15px;
+    }
+    /* Activity */
+    .activity {
+        margin-bottom: 5px;
+    }
+    .activity > .topic {
+        height: 5%;
+        font-size: 22px;
+    }
+    .activity > .main_box {
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    .activity > .main_box > .box > img {
+        width: 80%;
+    }
+    .activity > .main_box > .box {
+        width: 95%;
+        margin-top: 25px;
+    }
+    /* Contact */
+    .contact > .topic {
+        font-size: 22px;
+    }
+    .contact > .under > form {
+        height: 70vh;
+        padding: 0px;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    .contact > .under > form > p {
+        font-size: 18px;
+    }
+    .contact > .under > form > input, textarea {
+        width: 90%;
+        height: 4vh;
+        padding: 4px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+    .contact > .under > form > textarea {
+        height: 8vh;
+    }
+    .contact > .under > form > .send{
+        width: 15%;
+        font-size: 12px;
+    }
+    .contact > .under > .ip > .text > p,i {
+        font-size: 15px;
+    }
+    .contact > .under > .ip > .text > .icon > a > i {
+        font-size: 25px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+}
